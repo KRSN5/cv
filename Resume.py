@@ -6,7 +6,7 @@ import requests
 current_dir = Path.cwd()
 
 PAGE_TITLE = "CV | Szymon Krasnodębski"
-PAGE_ICON = "\U0001F454"
+PAGE_ICON = "\U0001F4BB"
 
 css_code = """
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
@@ -255,7 +255,7 @@ if submit:
             }
             response = requests.post(f"https://formspree.io/f/xlekywoy",
                                     data=data,
-                                    headers={"Referer": "https://cv-szymon-krasnodebski.onrender.com/"})
+                                    headers={"Referer": "https://cv-szymon-krasnodebski.com/"})
             
             if response.status_code == 200:
                 st.success("Wiadomość wysłana \U0001F44D")
