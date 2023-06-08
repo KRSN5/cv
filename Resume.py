@@ -105,7 +105,6 @@ st.markdown("<script>{}</script>".format(javascript_code), unsafe_allow_html=Tru
 
 loader = st.empty()
 loader.markdown("""<div class="loader"></div>""", unsafe_allow_html=True)
-loader.empty()
 
 resume_file = current_dir / "assets" / "cv_szymon_krasnodebski.pdf"
 profile_pic = current_dir / "assets" / "pic2.png"
@@ -266,3 +265,5 @@ if submit:
             st.error(f"Wystąpił błąd podczas wysyłania wiadomości: {e}")
     else:
         st.warning("Proszę wypełnić wszystkie pola")
+        
+loader.empty()    
