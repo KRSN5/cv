@@ -97,6 +97,19 @@ javascript_code = """
     });
 """
 
+
+google_analytics_script = """
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1E02SED5V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-D1E02SED5V');
+    </script>
+"""
+
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 st.markdown("<style>{}</style>".format(css_code), unsafe_allow_html=True)
@@ -106,11 +119,15 @@ st.markdown("<script>{}</script>".format(javascript_code), unsafe_allow_html=Tru
 loader = st.empty()
 loader.markdown("""<div class="loader"></div>""", unsafe_allow_html=True)
 
+st.markdown(google_analytics_script, unsafe_allow_html=True)
+
+
+
 resume_file = current_dir / "assets" / "cv_szymon_krasnodebski.pdf"
 profile_pic = current_dir / "assets" / "pic2.png"
 pdf_symbol = "\U0001F4C4"
 NAME = "Szymon Krasnodębski"
-DESCRIPTION = """Technik logistyk, eksploatacji portów i terminali | Sprzedawca we własnej firmie detaliczno - odzieżowej"""
+DESCRIPTION = """Sprzedawca E-commerce | Doradca Klienta"""
 EMAIL = "szymon.natalian.krasnodebski@gmail.com"
 PHONE = "536 579 591"
 LINKEDIN = {"Linkedin": "http://www.linkedin.com/in/szymon-krasnodębski"}
@@ -155,7 +172,7 @@ with col1:
     st.image(profile_pic, width=300)
 with col2:
     st.title(NAME)
-    st.write(DESCRIPTION)
+    st.write(f'<p style="font-size:22px;">{DESCRIPTION}</p>', unsafe_allow_html=True)
     st.download_button(
         label=pdf_symbol + " Pobierz PDF",
         data=PDFbyte,
@@ -176,7 +193,7 @@ st.write(
 - \u2713 2 lata doświadczenia w branży odzieżowej
 - \u2713 Zawsze na bieżąco z aktualnymi trendami
 - \u2713 Bogate doświadczenie w obsłudze klienta
-- \u2713 Łącznie ponad 500 pozytywnych ocen na takich portalach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
+- \u2713 Łącznie ponad 600 pozytywnych ocen na takich portalach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
 """
 )
 st.write("#")
@@ -192,15 +209,30 @@ st.write("#")
 st.subheader("Umiejętności")
 st.write(
     """
-- \U0001F464\U0000200D\U0001F4AC\U0000200D\U0001F464 Nawiązywanie kontaktu z klientem
-- \U0001F4B3 Obsługa kasy/terminalu płatniczego
+- \U0001F464\U0000200D\U0001F4AC\U0000200D\U0001F464 Nawiązywanie kontaktu z klientem, 
+pozyskiwanie nowych klientów 
+oraz tworzenie bazy klientów
+- \U0001F454 Znajomość branży odzieżowej - rozróżnianie replik od oryginalnych produktów, zawsze na bieżąco z aktualnymi trendami
+- \U0001F9D1\u200D\U0001F4BB Podstawy programowania i umiejętności informatyczne: Python, JS, CSS, HTML, Excel
+- \U0001F4B3 Obsługa kasy i terminalu płatniczego
 - \U0001F69A Wysokie kwalifikacje logistyczne
-- \U0001F9D1\u200D\U0001F4BB Podstawy programowania i umiejętności informatyczne:
-- Python, JS/CSS/HTML, Excel
 - \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny
 - \U0001F697 Prawo jazdy kat. B
 """
 )
+
+st.write("#")
+st.subheader("Portfolio/Projekty Front-endowe")
+st.write("---")
+
+with st.expander("Sklep Internetowy E-commerce Website Concept"):
+    st.markdown("""<iframe src="https://e-commerce-website-bidlit-1445e3fe9c04.herokuapp.com/" width="1400" height="1080" style="position:relative; left:-350px;"></iframe>""", unsafe_allow_html=True)
+
+
+with st.expander("DZIK ENERGY Website Slider Concept"):
+  st.markdown('<iframe src="https://dzik-energy-slider-3a343de5cd11.herokuapp.com/" width="1400" height="800" style="position:relative; left:-350px;"></iframe>', unsafe_allow_html=True)
+
+
 st.write("#")
 st.subheader("Doświadczenie zawodowe")
 st.write("---")
@@ -208,17 +240,18 @@ st.write("**Własna działalność | BidLit Szymon Krasnodębski**")
 st.write("07/2020 - Teraz")
 st.write(
     """
-- \u25B6 Sprzedaż internetowa/E-commerce odzieży i akcesoriów
-- \u25B6 Stały kontakt z klientem w języku polskim i angielskim
+- \u25B6 Sprzedaż internetowa/E-commerce - sprzedaż detaliczna odzieży i akcesoriów
+- \u25B6 Prowadzenie strony internetowej
 - \u25B6 Międzynarodowa wysyłka towarów
+- \u25B6 Stały kontakt z klientem w języku polskim i angielskim
 - \u25B6 Zarządzanie i optymalizacja wydajnością pracy
 - \u25B6 Sprowadzanie/Importowanie towarów z zagranicy
 - \u25B6 Nawiązywanie relacji z dostawcami
-- \u25B6 Rozróżnianie replik od oryginalnych produktów, bycie na bieżąco z aktualnymi trendami
 - \u25B6 Dbanie o estetykę ogłoszeń i sprzedawanych produktów
 - \u25B6 Rozwój działalności, otwartość na nowe propozcyje i rozwiązania
 """
 )
+
 st.write("---")
 st.write("#")
 st.write("**Junior/Praktykant ds. Logistyki | Prymat Sp. z o.o.**")
@@ -255,7 +288,7 @@ if submit:
             }
             response = requests.post(f"https://formspree.io/f/xlekywoy",
                                     data=data,
-                                    headers={"Referer": "https://cv-szymon-krasnodebski.onrender.com"})
+                                    headers={"Referer": "https://cv-szymon-krasnodebski.onrender.com/"})
             
             if response.status_code == 200:
                 st.success("Wiadomość wysłana \U0001F44D")
@@ -265,5 +298,5 @@ if submit:
             st.error(f"Wystąpił błąd podczas wysyłania wiadomości: {e}")
     else:
         st.warning("Proszę wypełnić wszystkie pola")
-        
-loader.empty()    
+
+loader.empty()
