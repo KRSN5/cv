@@ -261,6 +261,21 @@ with st.expander("Sklep Internetowy (Website Concept) - WKDZIK®"):
 
 with st.expander("Aplikacja Android/iOS (App Concept, prezentacja wideo) - WKDZIK®"):
         
+        st.write("#")
+        st.markdown(
+            """
+            <style>
+            .text2 {
+                text-align: center;
+                font-size: 16px;
+            }
+            </style>
+            <div class="text2">Jeśli wideo się nie odtwarza proszę odświeżyć stronę lub odnaleźć w serwisie YouTube: <br> https://www.youtube.com/watch?v=aUBMSPN18es</div>
+            """,
+            unsafe_allow_html=True
+        )
+        
+        st.write("#")
         st.markdown(
             """
             <style>
@@ -286,6 +301,7 @@ with st.expander("Aplikacja Android/iOS (App Concept, prezentacja wideo) - WKDZI
     """,
     unsafe_allow_html=True
 )
+        
 
 st.write("#")
 st.subheader("Doświadczenie zawodowe")
