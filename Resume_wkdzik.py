@@ -253,17 +253,33 @@ with st.expander("Sklep Internetowy (Website Concept) - WKDZIK®"):
 
 
 with st.expander("Aplikacja Android/iOS (App Concept, prezentacja wideo) - WKDZIK®"):
+        
         st.markdown(
-            f"""
-            <div style="position: relative; z-index: 2;">
-                <div style="position: absolute; z-index: 1; top: 30px; left: 160px;">
-                    <iframe src="https://www.youtube.com/embed/Poo07m7uDHU?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=Poo07m7uDHU" style="width: 360px; height: 760px; border-radius: 30px;" frameborder="0"></iframe>
-                </div>
-                <div style="background-image: url('data:image/png;base64,{image_base64}'); width: 1076px; height: 1628px; position: relative; transform: scale(0.428); top:-400px; left:-200px; z-index: 2; pointer-events: none;"></div>
-            </div>
+            """
+            <style>
+            .center-text {
+                text-align: center;
+                font-size: 12px;
+            }
+            </style>
+            <div class="center-text">Żeby przewijać lub zatrzymywać wideo, należy kliknąć w wideo, następnie za pomocą klawiatury <br> (J - do tyłu, K - pauza, L - do przodu)</div>
             """,
             unsafe_allow_html=True
         )
+
+
+        st.markdown(
+    f"""
+    <div style="position: relative; z-index: 2;">
+        <div style="position: absolute; z-index: 1; top: 30px; left: 160px;">
+            <iframe src="https://www.youtube.com/embed/aUBMSPN18es?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=aUBMSPN18es" style="width: 360px; height: 760px; border-radius: 30px;" frameborder="0" onError="this.src='https://www.youtube.com/embed/aUBMSPN18es?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=aUBMSPN18es'"></iframe>
+        </div>
+        <div style="background-image: url('data:image/png;base64,{image_base64}'); width: 1076px; height: 1628px; position: relative; transform: scale(0.428); top:-400px; left:-200px; z-index: 2; pointer-events: none;"></div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 st.write("#")
 st.subheader("Doświadczenie zawodowe")
@@ -298,7 +314,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
         st.markdown(f"[{platform}]({link})")
 
 st.write("---")
-st.write('<span style="font-size: 12px;">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</span>', unsafe_allow_html=True)
+st.write('<span style="font-size: 12px;">Wyrażam zgodę na przetwarzanie moich danych osobowych przez WK Sp. z o.o. dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).</span>', unsafe_allow_html=True)
 st.write("#")
 st.write("#")
 st.write("#")
