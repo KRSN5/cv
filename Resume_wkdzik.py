@@ -240,7 +240,7 @@ st.write(
 - 🖱️ Znajomość branży IT - na bieżąco z nowinkami i nowoczesnymi rozwiązaniami technologicznymi
 - ⚙️ Umiejętność stosowania specjalistycznych API w celu efektywnej automatyzacji procesów w biznesie
 - ⌨️ Doświadczenie w tworzeniu: responsywnych interfejsów użytkownika, UX/UI Design, aplikacji mobilnych w React Native, aplikacji webowych, integracji z bazami danych MySQL
-- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny 82% pisemny, 93% ustny
+- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2) 82% pisemny, 93% ustny
 """
 )
 
