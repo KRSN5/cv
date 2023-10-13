@@ -114,6 +114,25 @@ google_analytics_script = """
     </script>
 """
 
+
+javascript_code2 = """
+<script type="text/javascript">
+  function handleError(element) {
+    element.src='https://www.youtube.com/embed/aUBMSPN18es?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=aUBMSPN18es';
+  }
+</script>
+"""
+
+html_code2 = """
+<div style="position: relative; z-index: 2;">
+    <div style="position: absolute; z-index: 1; top: 30px; left: 160px;">
+        <iframe src="https://www.youtube.com/embed/aUBMSPN18es?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=aUBMSPN18es" style="width: 360px; height: 760px; border-radius: 30px;" frameborder="0" onError="handleError(this)"></iframe>
+    </div>
+    <div style="background-image: url('data:image/png;base64,{}'); width: 1076px; height: 1628px; position: relative; transform: scale(0.428); top:-400px; left:-200px; z-index: 2; pointer-events: none;"></div>
+</div>
+"""
+
+
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
 st.markdown("<style>{}</style>".format(css_code), unsafe_allow_html=True)
@@ -133,6 +152,7 @@ def get_image_base64(iphone):
         return base64.b64encode(img_file.read()).decode("utf8")
     
 image_base64 = get_image_base64(iphone)
+final_code = javascript_code2 + html_code2.format(image_base64)
 
 resume_file = current_dir / "assets" / "resume_szymon_krasnodebski.pdf"
 matura_file = current_dir / "assets" / "matura2023.pdf"
@@ -283,17 +303,7 @@ with st.expander("Aplikacja Android/iOS (App Concept, prezentacja wideo) - WKDZI
         )
 
 
-        st.markdown(
-    f"""
-    <div style="position: relative; z-index: 2;">
-        <div style="position: absolute; z-index: 1; top: 30px; left: 160px;">
-            <iframe src="https://www.youtube.com/embed/aUBMSPN18es?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=aUBMSPN18es" style="width: 360px; height: 760px; border-radius: 30px;" frameborder="0" onError="this.src='https://www.youtube.com/embed/aUBMSPN18es?autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=aUBMSPN18es'"></iframe>
-        </div>
-        <div style="background-image: url('data:image/png;base64,{image_base64}'); width: 1076px; height: 1628px; position: relative; transform: scale(0.428); top:-400px; left:-200px; z-index: 2; pointer-events: none;"></div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+        st.markdown(final_code, unsafe_allow_html=True)
 
 
 st.write("#")
