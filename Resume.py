@@ -263,10 +263,10 @@ st.write(
     """
 - \U0001F464\U0000200D\U0001F4AC\U0000200D\U0001F464 Nawiązywanie kontaktu z klientem, pozyskiwanie nowych klientów oraz tworzenie bazy klientów
 - \U0001F454 Znajomość branży odzieżowej - rozróżnianie replik od oryginalnych produktów, zawsze na bieżąco z aktualnymi trendami
-- \U0001F9D1\u200D\U0001F4BB Programowanie i umiejętności informatyczne: Python, JavaScript, React, React Native, TypeScript, HTML, CSS, Microsoft Clipchamp, DaVinci Resolve, MySQL, Excel
+- \U0001F9D1\u200D\U0001F4BB Programowanie i umiejętności informatyczne: Python, JavaScript, Node.js, Express.js, React, React Native, TypeScript, HTML, CSS, Microsoft Clipchamp, DaVinci Resolve, MySQL, Excel
 - \U0001F4B3 Obsługa kasy i terminalu płatniczego
 - \U0001F69A Wysokie kwalifikacje logistyczne
-- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2) 82%, 93% ustny
+- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2) - 82%, 93% ustny
 - \U0001F697 Prawo jazdy kat. B
 """
 )
