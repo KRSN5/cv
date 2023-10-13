@@ -358,7 +358,7 @@ if submit:
             }
             response = requests.post(f"https://formspree.io/f/xlekywoy",
                                     data=data,
-                                    headers={"Referer": "https://cv-szymon-krasnodebski.onrender.com/"})
+                                    headers={"Referer": "https://resume-szymon-krasnodebski.onrender.com/"})
             
             if response.status_code == 200:
                 st.success("Wiadomość wysłana \U0001F44D")
