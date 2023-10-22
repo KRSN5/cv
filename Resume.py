@@ -158,7 +158,8 @@ profile_pic = current_dir / "assets" / "pic2.png"
 pdf_symbol = "📄"
 pdf_symbol2 = "📑"
 NAME = "Szymon Krasnodębski"
-DESCRIPTION = """Sprzedawca E-commerce | Doradca Klienta"""
+DESCRIPTION = """Retail E-commerce <br> Doradca Klienta <br> Junior Full-Stack Developer
+"""
 STUDIES = """Student na wydziale Inżynierii Mechanicznej w WAT na kierunku Mechanika i Budowa Maszyn"""
 EMAIL = "szymon.natalian.krasnodebski@gmail.com"
 PHONE = "536 579 591"
@@ -241,9 +242,10 @@ st.subheader("Doświadczenie i kwalifikacje")
 st.write("---")
 st.write(
     """
-- \u2713 3 lata doświadczenia w branży odzieżowej
+- \u2713 3 lata doświadczenia w branży odzieżowej, IT/E-commerce
 - \u2713 Zawsze na bieżąco z aktualnymi trendami
-- \u2713 Bogate doświadczenie w obsłudze klienta
+- \u2713 Bogate doświadczenie w obsłudze klienta, tworzeniu aplikacji i stron internetowych
+- \u2713 Zaawansowane umiejętności w automatyzacji procesów w biznesie
 - \u2713 Łącznie ponad 700 pozytywnych ocen na takich platformach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
 """
 )
@@ -264,9 +266,11 @@ st.write(
 - \U0001F464\U0000200D\U0001F4AC\U0000200D\U0001F464 Nawiązywanie kontaktu z klientem, pozyskiwanie nowych klientów oraz tworzenie bazy klientów
 - \U0001F454 Znajomość branży odzieżowej - rozróżnianie replik od oryginalnych produktów, zawsze na bieżąco z aktualnymi trendami
 - \U0001F9D1\u200D\U0001F4BB Programowanie i umiejętności informatyczne: Python, JavaScript, Node.js, Express.js, React, React Native, TypeScript, HTML, CSS, Microsoft Clipchamp, DaVinci Resolve, MySQL, Excel
+- 🖱️ Znajomość branży IT - na bieżąco z nowinkami i nowoczesnymi rozwiązaniami technologicznymi
+- ⚙️ Umiejętność stosowania specjalistycznych API i narzędzi informatycznych w celu efektywnej automatyzacji procesów w biznesie
+- ⌨️ Doświadczenie w tworzeniu: responsywnych interfejsów użytkownika, UX/UI Design, aplikacji mobilnych w React Native, aplikacji webowych, integracji z bazami danych MySQL
 - \U0001F4B3 Obsługa kasy i terminalu płatniczego
-- \U0001F69A Wysokie kwalifikacje logistyczne
-- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2) - 82%, 93% ustny
+- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2+); Matura pisemna 82%, ustna 93%
 - \U0001F697 Prawo jazdy kat. B
 """
 )
@@ -323,6 +327,7 @@ st.write(
     """
 - \u25B6 Sprzedaż internetowa/E-commerce - sprzedaż detaliczna odzieży i akcesoriów
 - \u25B6 Tworzenie i prowadzenie własnej strony internetowej
+- \u25B6 Zarządzanie stanami magazynowymi
 - \u25B6 Międzynarodowa wysyłka towarów
 - \u25B6 Stały kontakt z klientem w języku polskim i angielskim
 - \u25B6 Zarządzanie i optymalizacja wydajnością pracy
@@ -342,7 +347,7 @@ st.write(
 - \u25B6 Obsługa klienta
 - \u25B6 Dbanie o wygląd i estetykę salonu
 - \u25B6 Przyjmowanie dostaw i wysyłka zwrotów
-- \u25B6 Aktualizowanie danych statystycznych w Excelu
+- \u25B6 Aktualizowanie danych statystycznych w OpenOffice Calc
 - \u25B6 Praca w grupie
 - \u25B6 Współpraca z działem VM
 """

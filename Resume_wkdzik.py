@@ -161,7 +161,7 @@ profile_pic = current_dir / "assets" / "pic2.png"
 pdf_symbol = "📄"
 pdf_symbol2 = "📑"
 NAME = "Szymon Krasnodębski"
-DESCRIPTION = """Retail E-commerce | Junior Full-Stack Developer"""
+DESCRIPTION = """Retail E-commerce <br> Junior Full-Stack Developer"""
 STUDIES = """Student na wydziale Inżynierii Mechanicznej w WAT na kierunku Mechanika i Budowa Maszyn"""
 EMAIL = "szymon.natalian.krasnodebski@gmail.com"
 PHONE = "536 579 591"
@@ -244,9 +244,9 @@ st.subheader("Doświadczenie i kwalifikacje")
 st.write("---")
 st.write(
     """
-- \u2713 3 lata doświadczenia w branży IT/E-commerce
+- \u2713 3 lata doświadczenia w branży odzieżowej, IT/E-commerce
 - \u2713 Zawsze na bieżąco z aktualnymi trendami
-- \u2713 Bogate doświadczenie w tworzeniu aplikacji i stron internetowych
+- \u2713 Bogate doświadczenie w obsłudze klienta, tworzeniu aplikacji i stron internetowych
 - \u2713 Zaawansowane umiejętności w automatyzacji procesów w biznesie
 """
 )
@@ -258,9 +258,9 @@ st.write(
     """
 - 🧑‍💻 Programowanie i umiejętności informatyczne: Python, JavaScript, Node.js, Express.js, React, React Native, TypeScript, HTML, CSS, Microsoft Clipchamp, DaVinci Resolve, MySQL, Excel
 - 🖱️ Znajomość branży IT - na bieżąco z nowinkami i nowoczesnymi rozwiązaniami technologicznymi
-- ⚙️ Umiejętność stosowania specjalistycznych API w celu efektywnej automatyzacji procesów w biznesie
+- ⚙️ Umiejętność stosowania specjalistycznych API i narzędzi informatycznych w celu efektywnej automatyzacji procesów w biznesie
 - ⌨️ Doświadczenie w tworzeniu: responsywnych interfejsów użytkownika, UX/UI Design, aplikacji mobilnych w React Native, aplikacji webowych, integracji z bazami danych MySQL
-- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2) - 82% pisemny, 93% ustny
+- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2+); Matura pisemna 82%, ustna 93%
 """
 )
 
