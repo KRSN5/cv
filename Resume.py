@@ -246,7 +246,7 @@ st.write(
 - \u2713 Zawsze na bieżąco z aktualnymi trendami
 - \u2713 Bogate doświadczenie w obsłudze klienta, tworzeniu aplikacji i stron internetowych
 - \u2713 Zaawansowane umiejętności w automatyzacji procesów w biznesie
-- \u2713 Łącznie ponad 700 pozytywnych ocen na takich platformach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
+- \u2713 Łącznie ponad 700 pozytywnych ocen od kupujących, na takich platformach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
 """
 )
 st.write("#")

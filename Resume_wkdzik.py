@@ -325,7 +325,7 @@ st.write(
 - \u25B6 Rozwój działalności, otwartość na nowe propozcyje i rozwiązania
 - \u25B6 3 lata doświadczenia w branży odzieżowej
 - \u25B6 Bogate doświadczenie w obsłudze klienta
-- \u25B6 Łącznie ponad 700 pozytywnych ocen na takich platformach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
+- \u25B6 Łącznie ponad 700 pozytywnych ocen od kupujących, na takich platformach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
 """
 )
 
