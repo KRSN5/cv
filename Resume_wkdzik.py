@@ -155,14 +155,13 @@ image_base64 = get_image_base64(iphone)
 final_code = javascript_code2 + html_code2.format(image_base64)
 
 resume_file = current_dir / "assets" / "resume_szymon_krasnodebski.pdf"
-matura_file = current_dir / "assets" / "matura2023.pdf"
 dyplom_file = current_dir / "assets" / "dyplom_oke.pdf"
 profile_pic = current_dir / "assets" / "pic2.png"
 pdf_symbol = "📄"
 pdf_symbol2 = "📑"
 NAME = "Szymon Krasnodębski"
 DESCRIPTION = """Retail E-commerce <br> Junior Full-Stack Developer"""
-STUDIES = """Student na wydziale Inżynierii Mechanicznej w WAT na kierunku Mechanika i Budowa Maszyn"""
+STUDIES = """Student na wydziale Cybernetyki w WAT na kierunku Informatyka"""
 EMAIL = "szymon.natalian.krasnodebski@gmail.com"
 PHONE = "536 579 591"
 LINKEDIN = {"Linkedin": "http://www.linkedin.com/in/szymon-krasnodębski"}
@@ -200,8 +199,6 @@ image_mapping = {
 }
 with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
-with open(matura_file, "rb") as pdf_file2:
-    PDFbyte2 = pdf_file2.read()
 
 with open(dyplom_file, "rb") as pdf_file3:
     PDFbyte3 = pdf_file3.read()
@@ -214,16 +211,15 @@ with col2:
     st.title(NAME)
     st.write(f'<p style="font-size:22px;">{DESCRIPTION}</p>', unsafe_allow_html=True)
     st.write(f'<p style="font-size:14px;">{STUDIES}</p>', unsafe_allow_html=True)
+    with st.expander(pdf_symbol2 + " Świadectwo dojrzałości"):
+        st.markdown(
+            f'<img src="https://i.imgur.com/jmo5WYQ.jpg" style="width:700px; margin-left:-380px;">', 
+            unsafe_allow_html=True
+    )
     st.download_button(
         label=pdf_symbol + " Pobierz PDF",
         data=PDFbyte,
         file_name="cv_szymon_krasnodebski.pdf",
-        mime="application/octet-stream",
-    )
-    st.download_button(
-        label=pdf_symbol2 + " Świadectwo dojrzałości",
-        data=PDFbyte2,
-        file_name="swiadectwo_dojrzalosci_szymon_krasnodebski.pdf",
         mime="application/octet-stream",
     )
     # st.download_button(
@@ -232,8 +228,8 @@ with col2:
     #     file_name="dyplom_zawodowy_szymon_krasnodebski.pdf",
     #     mime="application/octet-stream",
     # )
-    st.write("\U0001F4F1 " + PHONE)
-    st.markdown('<span style="white-space: nowrap;">\u2709 {}</span>'.format(EMAIL), unsafe_allow_html=True)
+    st.write("📱 " + PHONE)
+    st.markdown('<span style="white-space: nowrap;">📧 {}</span>'.format(EMAIL), unsafe_allow_html=True)
     col3, col4 = st.columns([1, 20])
     with col3:
         st.image(linkedin_image, width=20)
@@ -244,9 +240,9 @@ st.subheader("Doświadczenie i kwalifikacje")
 st.write("---")
 st.write(
     """
-- \u2713 3 lata doświadczenia w branży odzieżowej, IT/E-commerce
-- \u2713 Zawsze na bieżąco z aktualnymi trendami
+- \u2713 3 lata doświadczenia w branży odzieżowej E-commerce / IT
 - \u2713 Bogate doświadczenie w obsłudze klienta, tworzeniu aplikacji i stron internetowych
+- \u2713 Zawsze na bieżąco z aktualnymi trendami w branży
 - \u2713 Zaawansowane umiejętności w automatyzacji procesów w biznesie
 """
 )
@@ -257,10 +253,18 @@ st.write("---")
 st.write(
     """
 - 🧑‍💻 Programowanie i umiejętności informatyczne: Python, JavaScript, Node.js, Express.js, React, React Native, TypeScript, HTML, CSS, Microsoft Clipchamp, DaVinci Resolve, MySQL, Excel
-- 🖱️ Znajomość branży IT - na bieżąco z nowinkami i nowoczesnymi rozwiązaniami technologicznymi
+
 - ⚙️ Umiejętność stosowania specjalistycznych API i narzędzi informatycznych w celu efektywnej automatyzacji procesów w biznesie
+
 - ⌨️ Doświadczenie w tworzeniu: responsywnych interfejsów użytkownika, UX/UI Design, aplikacji mobilnych w React Native, aplikacji webowych, integracji z bazami danych MySQL
-- \U0001F1EC\U0001F1E7 Język angielski - poziom rozszerzony maturalny (B2+); Matura pisemna 82%, ustna 93%
+
+- 🖱️ Znajomość branży IT - na bieżąco z nowinkami i nowoczesnymi rozwiązaniami technologicznymi
+
+- 🌐 Obsługa narzędzi i platform do efektywnej pracy w sektorze E-commerce: Shopify, WordPress, WIX, WooCommerce, PrestaShop, Ebay, Allegro, OLX, Stripe, PayPal, Enova365
+
+- 🤝 Nawiązywanie kontaktu z klientem, pozyskiwanie nowych klientów oraz tworzenie bazy klientów
+
+- 🇬🇧/🇺🇸 Język angielski - poziom rozszerzony maturalny (B2+); Matura pisemna 82%, ustna 93%
 """
 )
 
@@ -313,7 +317,7 @@ st.write("**Własna działalność | BidLit Szymon Krasnodębski**")
 st.write("07/2020 - 06/2023")
 st.write(
     """
-- \u25B6 Sprzedaż internetowa/E-commerce - sprzedaż detaliczna odzieży i akcesoriów
+- \u25B6 Sprzedaż internetowa, detaliczna odzieży i akcesoriów
 - \u25B6 Tworzenie i prowadzenie własnej strony internetowej
 - \u25B6 Zarządzanie stanami magazynowymi
 - \u25B6 Międzynarodowa wysyłka towarów
@@ -323,8 +327,7 @@ st.write(
 - \u25B6 Nawiązywanie relacji z dostawcami
 - \u25B6 Dbanie o estetykę ogłoszeń i sprzedawanych produktów
 - \u25B6 Rozwój działalności, otwartość na nowe propozcyje i rozwiązania
-- \u25B6 3 lata doświadczenia w branży odzieżowej
-- \u25B6 Bogate doświadczenie w obsłudze klienta
+- \u25B6 3 lata doświadczenia w branży odzieżowej i obsłudze klientów
 - \u25B6 Łącznie ponad 700 pozytywnych ocen od kupujących, na takich platformach jak: Vinted, Grailed, OLX, Allegro, Ebay, Vestiaire Collective
 """
 )
@@ -361,7 +364,7 @@ if submit:
                                     headers={"Referer": "https://resume-szymon-krasnodebski.onrender.com/"})
             
             if response.status_code == 200:
-                st.success("Wiadomość wysłana \U0001F44D")
+                st.success("Wiadomość wysłana ✅")
             else:
                 st.error("Wystąpił błąd podczas wysyłania wiadomości")
         except Exception as e:
