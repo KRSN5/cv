@@ -260,7 +260,7 @@ st.write(
 
 - 🖱️ Znajomość branży IT - na bieżąco z nowinkami i nowoczesnymi rozwiązaniami technologicznymi
 
-- 🌐 Obsługa narzędzi i platform do efektywnej pracy w sektorze E-commerce: Shopify, WordPress, WIX, WooCommerce, PrestaShop, BaseLinker, Ebay, Allegro, OLX, Empik, Stripe, PayPal, Enova365, OpenAI
+- 🌐 Obsługa narzędzi i platform do efektywnej pracy w sektorze E-commerce: Shopify, WordPress, WIX, WooCommerce, PrestaShop, BaseLinker, Ebay, Allegro, OLX, Empik, Stripe, PayPal, Tidio, Formspree, Enova365, OpenAI
 
 - 🤝 Nawiązywanie kontaktu z klientem, pozyskiwanie nowych klientów oraz tworzenie bazy klientów
 
